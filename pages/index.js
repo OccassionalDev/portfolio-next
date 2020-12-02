@@ -1,6 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -28,7 +31,10 @@ export default function Home() {
 				<div id="projects"></div>
 
 				<div id="contact">
-					<h1>Let's start working together.</h1>
+					<h1>
+						<FontAwesomeIcon icon={faEnvelope} fixedWidth /> Let's start working
+						together.
+					</h1>
 
 					<form>
 						<label>Name</label>
