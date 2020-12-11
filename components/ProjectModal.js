@@ -1,8 +1,20 @@
 import React, { Component } from "react";
+import Modal from "react-modal";
 
 export class ProjectModal extends Component {
+	constructor() {
+		super();
+		this.state = {
+			displayModal: false,
+		};
+	}
+
 	render() {
-		return <div></div>;
+		return (
+			<div>
+				<p>Hello</p>
+			</div>
+		);
 	}
 }
 
