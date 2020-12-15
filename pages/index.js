@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import SocialIcons from "../components/SocialIcons";
+import EmailForm from "../components/EmailForm";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -39,24 +40,7 @@ export default function Home() {
 						together.
 					</h1>
 
-					<form>
-						<label>Name</label>
-						<br />
-						<input type="text" />
-						<br />
-
-						<label>Email</label>
-						<br />
-						<input type="email" />
-						<br />
-
-						<label>Message</label>
-						<br />
-						<textarea />
-						<br />
-
-						<input type="submit" value="Send" />
-					</form>
+					<EmailForm />
 				</div>
 			</main>
 
