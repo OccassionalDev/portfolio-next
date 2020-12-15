@@ -5,6 +5,12 @@ export class ProjectModal extends Component {
 	constructor() {
 		super(props);
 		this.state = {
+			image: props.image,
+			title: props.title,
+			description: props.description,
+			github: props.github,
+			video: props.video,
+			link: props.link,
 			displayModal: false,
 		};
 	}
@@ -19,3 +25,8 @@ export class ProjectModal extends Component {
 }
 
 export default ProjectModal;
+
+ProjectModal.defaultProps = {
+	video: "",
+	link: "",
+};
