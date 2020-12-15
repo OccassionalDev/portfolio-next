@@ -1,9 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import SocialIcons from "../components/SocialIcons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
@@ -29,8 +28,7 @@ export default function Home() {
 				<div id="home"></div>
 
 				<div id="about">
-					<FontAwesomeIcon icon={faGithub} fixedWidth />
-					<FontAwesomeIcon icon={faLinkedinIn} fixedWidth />
+					<SocialIcons />
 				</div>
 
 				<div id="projects"></div>
@@ -63,8 +61,7 @@ export default function Home() {
 			</main>
 
 			<footer className={styles.footer}>
-				<FontAwesomeIcon icon={faGithub} fixedWidth />
-				<FontAwesomeIcon icon={faLinkedinIn} fixedWidth />
+				<SocialIcons />
 			</footer>
 		</div>
 	);
