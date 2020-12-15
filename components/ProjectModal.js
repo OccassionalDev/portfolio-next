@@ -3,7 +3,7 @@ import Modal from "react-modal";
 
 export class ProjectModal extends Component {
 	constructor() {
-		super();
+		super(props);
 		this.state = {
 			displayModal: false,
 		};
