@@ -12,9 +12,12 @@ export class ProjectModal extends Component {
 		this.state = {
 			displayModal: false,
 		};
+
+		this.displayLiveDemoLink = this.displayLiveDemoLink.bind(this);
+		this.displayVideoLink = this.displayVideoLink.bind(this);
 	}
 
-	displayVideoLink = () => {
+	displayVideoLink() {
 		if (this.props.videoLink !== "") {
 			return (
 				<>
@@ -29,9 +32,9 @@ export class ProjectModal extends Component {
 				</>
 			);
 		}
-	};
+	}
 
-	displayLiveDemoLink = () => {
+	displayLiveDemoLink() {
 		if (this.props.liveDemoLink !== "") {
 			return (
 				<>
@@ -46,7 +49,7 @@ export class ProjectModal extends Component {
 				</>
 			);
 		}
-	};
+	}
 
 	render() {
 		return (
@@ -61,8 +64,8 @@ export class ProjectModal extends Component {
 					<FontAwesomeIcon icon={faCode} /> Github Repository
 				</a>
 
-				{this.displayVideoLink()}
-				{this.displayLiveDemoLink()}
+				{this.displayVideoLink}
+				{this.displayLiveDemoLink}
 			</div>
 		);
 	}
