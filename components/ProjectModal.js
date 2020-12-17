@@ -3,6 +3,7 @@ import Modal from "react-modal";
 
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export class ProjectModal extends Component {
@@ -24,6 +25,23 @@ export class ProjectModal extends Component {
 						rel="noopener noreferrer"
 					>
 						Video Demo
+					</a>
+				</>
+			);
+		}
+	};
+
+	displayLiveDemoLink = () => {
+		if (this.props.liveDemoLink !== "") {
+			return (
+				<>
+					<FontAwesomeIcon icon={faLink} />
+					<a
+						href={this.props.liveDemoLink}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Live Demo
 					</a>
 				</>
 			);
