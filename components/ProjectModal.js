@@ -15,6 +15,7 @@ export class ProjectModal extends Component {
 
 		this.displayLiveDemoLink = this.displayLiveDemoLink.bind(this);
 		this.displayVideoLink = this.displayVideoLink.bind(this);
+		this.handleCloseModal = this.handleCloseModal.bind(this);
 	}
 
 	displayVideoLink() {
@@ -51,21 +52,35 @@ export class ProjectModal extends Component {
 		}
 	}
 
+	handleCloseModal() {
+		this.setState({
+			displayModal: false,
+		});
+	}
+
 	render() {
 		return (
 			<div>
-				<h1>{this.props.title}</h1>
-				<p>{this.props.description}</p>
-				<a
-					href={this.props.githubLink}
-					target="_blank"
-					rel="noopener noreferrer"
+				<Modal
+					isOpen={this.state.displayModal}
+					shouldCloseOnOverlayClick={true}
 				>
-					<FontAwesomeIcon icon={faCode} /> Github Repository
-				</a>
+					<button onClick={this.handleCloseModal}>X</button>
 
-				{this.displayVideoLink}
-				{this.displayLiveDemoLink}
+					<h1>{this.props.title}</h1>
+					<p>{this.props.description}</p>
+
+					<a
+						href={this.props.githubLink}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FontAwesomeIcon icon={faCode} /> Github Repository
+					</a>
+
+					{this.displayVideoLink}
+					{this.displayLiveDemoLink}
+				</Modal>
 			</div>
 		);
 	}
