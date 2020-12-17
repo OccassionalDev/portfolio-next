@@ -1,24 +1,34 @@
 import React, { Component } from "react";
 import Modal from "react-modal";
 
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export class ProjectModal extends Component {
 	constructor() {
 		super(props);
 		this.state = {
-			image: props.image,
-			title: props.title,
-			description: props.description,
-			github: props.github,
-			video: props.video,
-			link: props.link,
 			displayModal: false,
 		};
 	}
 
+	displayVideoLink = () => {
+		if (this.props.videoLink !== "") {
+			return (
+				<>
+					<FontAwesomeIcon icon={faVideo} />
+					<a href={this.props.videoLink}>Video Demo</a>
+				</>
+			);
+		}
+	};
+
 	render() {
 		return (
 			<div>
-				<p>Hello</p>
+				<h1>{this.props.title}</h1>
+				<p>{this.props.description}</p>
 			</div>
 		);
 	}
@@ -27,6 +37,6 @@ export class ProjectModal extends Component {
 export default ProjectModal;
 
 ProjectModal.defaultProps = {
-	video: "",
-	link: "",
+	videoLink: "",
+	liveDemoLink: "",
 };
