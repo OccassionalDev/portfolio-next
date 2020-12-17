@@ -18,7 +18,13 @@ export class ProjectModal extends Component {
 			return (
 				<>
 					<FontAwesomeIcon icon={faVideo} />
-					<a href={this.props.videoLink}>Video Demo</a>
+					<a
+						href={this.props.videoLink}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Video Demo
+					</a>
 				</>
 			);
 		}
