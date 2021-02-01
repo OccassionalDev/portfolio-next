@@ -5,7 +5,7 @@ import { faVideo } from "@fortawesome/free-solid-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export class ProjectCard extends Component {
+export class ProjectInfo extends Component {
 	render() {
 		return (
 			<div className="project-card">
@@ -16,9 +16,9 @@ export class ProjectCard extends Component {
 	}
 }
 
-export default ProjectCard;
+export default ProjectInfo;
 
-ProjectCard.defaultProps = {
+ProjectInfo.defaultProps = {
 	videoLink: "",
 	liveDemoLink: "",
 };
