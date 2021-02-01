@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import ProjectModal from "./ProjectModal";
+
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export class ProjectCard extends Component {
 	render() {
