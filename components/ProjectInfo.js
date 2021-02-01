@@ -10,7 +10,9 @@ export class ProjectInfo extends Component {
 		return (
 			<div className="project-card">
 				<img className="project-image" src={this.props.image}></img>
-				<p className="project-title">{this.props.title}</p>
+				<h1 className="project-title">{this.props.title}</h1>
+
+				<p className="project-information">{this.props.information}</p>
 			</div>
 		);
 	}
@@ -21,4 +23,7 @@ export default ProjectInfo;
 ProjectInfo.defaultProps = {
 	videoLink: "",
 	liveDemoLink: "",
+	repoBackendLink: "",
+	repoFrontendLink: "",
+	repoLink: "",
 };
