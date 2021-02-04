@@ -21,6 +21,7 @@ export default function Home() {
 						<a href="#about">About</a>
 						<a href="#projects">Projects</a>
 						<a href="#contact">Contact</a>
+						{/* <a href="#blog">Blog</a> */}
 					</ul>
 				</nav>
 			</header>
@@ -41,6 +42,8 @@ export default function Home() {
 
 					<EmailForm />
 				</div>
+
+				<div id="blog"></div>
 			</main>
 
 			<footer className={styles.footer}>
