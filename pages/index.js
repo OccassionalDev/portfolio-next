@@ -32,13 +32,12 @@ export default function Home() {
 					<SocialIcons />
 				</div>
 
-				<div id="projects"></div>
+				<div id="projects">
+					<h1>Featured Projects</h1>
+				</div>
 
 				<div id="contact">
-					<h1>
-						<FontAwesomeIcon icon={faEnvelope} fixedWidth /> Let's start working
-						together.
-					</h1>
+					<h1>Let's start working together.</h1>
 
 					<EmailForm />
 				</div>
