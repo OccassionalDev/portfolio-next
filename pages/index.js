@@ -18,7 +18,7 @@ export default function Home() {
 
 				<nav>
 					<ul>
-						<a href="#about">About</a>
+						<a href="#about">About Me</a>
 						<a href="#projects">Projects</a>
 						<a href="#contact">Contact</a>
 						{/* <a href="#blog">Blog</a> */}
@@ -30,15 +30,16 @@ export default function Home() {
 				<div id="home"></div>
 
 				<div id="about">
+					<h2>About Me</h2>
 					<SocialIcons />
 				</div>
 
 				<div id="projects">
-					<h1>Featured Projects</h1>
+					<h2>Featured Projects</h2>
 				</div>
 
 				<div id="contact">
-					<h1>Let's start working together.</h1>
+					<h2>Let's start working together.</h2>
 
 					<EmailForm />
 				</div>
