@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import NavBar from "../components/NavBar";
+
 import SocialIcons from "../components/SocialIcons";
 import EmailForm from "../components/EmailForm";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -14,16 +16,7 @@ export default function Home() {
 			</Head>
 
 			<header>
-				<a href="#home">Erica Schimmel</a>
-
-				<nav>
-					<ul>
-						<a href="#about">About Me</a>
-						<a href="#projects">Projects</a>
-						<a href="#contact">Contact</a>
-						{/* <a href="#blog">Blog</a> */}
-					</ul>
-				</nav>
+				<NavBar />
 			</header>
 
 			<main className={styles.main}>
