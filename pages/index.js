@@ -39,7 +39,7 @@ export default function Home() {
 
 					<h3>Events App</h3>
 					<h3>Investments Planner</h3>
-					<h3>Storyline</h3>
+					<h3>Story React App</h3>
 				</div>
 
 				<div id="contact"></div>
