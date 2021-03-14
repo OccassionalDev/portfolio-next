@@ -15,9 +15,7 @@ export default function Home() {
 				<title>Erica Schimmel</title>
 			</Head>
 
-			<header>
-				<NavBar />
-			</header>
+			<NavBar />
 
 			<main className={styles.main}>
 				<div id="home"></div>
