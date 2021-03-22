@@ -13,17 +13,27 @@ header {
 	display: flex;
 	align-items: center;
 	top: 0;
+	height: 70px;
+	background-color: #dfdfdf;
+}
+
+.nav-logo {
+	padding-top: 5px;
+	height: 36px;
+	margin-left: 10rem;
 }
 
 .nav-bar-list {
 	list-style: none;
 	position: relative;
 	display: inline-flex;
+	margin-left: 30rem;
+	justify-content: space-around;
 }
 
 .nav-link {
 	display: block;
-	padding: 0.4em;
+	padding: 20px;
 }
 
 a {

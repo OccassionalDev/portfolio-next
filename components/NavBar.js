@@ -3,11 +3,17 @@ export default function NavBar() {
 		<>
 			<header>
 				<nav>
-					<a className="logo" href="#home">
+					<a className="nav-logo" href="#home">
 						Erica Schimmel
 					</a>
 
 					<ul className="nav-bar-list">
+						<li>
+							<a className="nav-link" href="#home">
+								Home
+							</a>
+						</li>
+
 						<li>
 							<a className="nav-link" href="#about">
 								About Me
